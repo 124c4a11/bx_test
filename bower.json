@@ -1,0 +1,17 @@
+{
+  "name": "loftschool-builder",
+  "version": "1.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "2.1.3",
+    "jQuery.equalHeights": "jquery.equalheights#^1.5.2",
+    "magnific-popup": "^1.1.0"
+  },
+  "devDependencies": {
+    "jQuery.equalHeights": "jquery.equalheights#^1.5.2"
+  }
+}

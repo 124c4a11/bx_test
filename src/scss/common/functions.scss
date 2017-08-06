@@ -1,0 +1,15 @@
+@function em($px, $base: $font-size-base) {
+  @return ($px / $base) * 1em;
+}
+
+@function emtopx($em, $base: $font-size-base) {
+  @return ($em * $base) * 1px;
+}
+
+@function rem($px, $base: $font-size-base) {
+  @return ($px / $base) * 1rem;
+}
+
+@function remtopx($rem, $base: $font-size-base) {
+  @return ($rem * $base) * 1px;
+}

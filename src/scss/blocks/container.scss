@@ -1,0 +1,15 @@
+/*================================================================
+   container
+================================================================*/
+
+.container {
+  max-width: 1200px;
+  min-width: 583px; // < 600px fix windows right scrollbar
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.container-inner {
+  overflow: hidden;
+  @include clearfix;
+}

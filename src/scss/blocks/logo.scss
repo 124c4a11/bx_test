@@ -1,0 +1,19 @@
+/*================================================================
+   logo
+================================================================*/
+
+.logo {
+  @include inline-block;
+  width: 210px;
+  height: 78px;
+}
+
+.logo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logo-text {
+  @include absolute-hidden;
+}

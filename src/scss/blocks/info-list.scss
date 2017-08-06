@@ -1,0 +1,36 @@
+/*================================================================
+  info-list
+================================================================*/
+
+.info-list {
+  @include list-unstyled;
+}
+
+.info-list-item {
+  margin-bottom: 10px;
+  font-size: rem(14);
+  color: #fff;
+}
+
+.info-list-item-title {
+  display: inline;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.info-list-item-description {
+  display: inline;
+  font-style: normal;
+}
+
+.info-list-item-link {
+  color: inherit;
+  text-decoration: none;
+  transition: all .25s;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    text-decoration: underline;
+  }
+}

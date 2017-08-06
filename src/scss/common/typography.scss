@@ -1,0 +1,16 @@
+/*==========================================================================
+  Typography
+==========================================================================*/
+
+$font-size-base: 16;
+$body-font: "Arial", sans-serif;
+
+html {
+  font-size: 100.01%;
+}
+
+body {
+  font: normal $font-size-base + px/1.2 $body-font;
+  color: $text-color-base;
+  -webkit-font-smoothing: antialiased;
+}

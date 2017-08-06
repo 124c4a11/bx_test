@@ -1,0 +1,43 @@
+block variables
+
+doctype html
+html.root(lang="en")
+  head
+    meta(charset="utf-8")
+    title
+      block title
+    meta(content="" name="author")
+    meta(content="" name="description")
+    meta(content="" name="keywords")
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+    //- favicon block start
+    //- favicon block end
+
+    link(rel='stylesheet' href='styles/vendor.css')
+    link(rel='stylesheet' href='styles/app.css')
+
+    <!--[if lt IE 9]>
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->
+
+  body.page
+
+    <!--[if lt IE 8]>
+      p.browserupgrade
+        | You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+
+    block content
+
+
+
+    script(src="js/common.js")
+    //Avoid `console` errors in browsers that lack a console.
+    script common.avoidConsoleErrors();
+    // svg4everybody adds SVG External Content support to all browsers.
+    script common.svg4everybody();
+    // Place any jQuery/helper plugins in here.
+    block script

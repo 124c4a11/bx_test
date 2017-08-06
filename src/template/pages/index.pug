@@ -1,0 +1,15 @@
+extend ../_template-en
+
+block title
+  | Binary Xperts
+
+
+block content
+  .page-wrapper
+    include ../sections/page-header
+    include ../sections/news-section
+    include ../sections/stock-section
+  include ../sections/page-footer
+
+block script
+  script(src="js/app.js")

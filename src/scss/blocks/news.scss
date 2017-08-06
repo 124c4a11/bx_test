@@ -1,0 +1,121 @@
+/*================================================================
+   news
+================================================================*/
+
+$news-item-controls-height: 20px;
+$gutter: 20px;
+
+.news {
+  @include clearfix;
+
+  @media only screen and (min-width: 900px) {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+  }
+}
+
+.news-item {
+  position: relative;
+  padding: 10px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $text-color-base;
+  }
+
+  @media only screen and (min-width: 900px) {
+    float: left;
+    width: 50%;
+    padding-left: $gutter;
+    padding-right: $gutter;
+
+    &::before {
+      background-color: transparent;
+    }
+
+    &:nth-child(2n + 1) {
+      &::before {
+        width: 200%;
+        background-color: $text-color-base;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    width: 33.33%;
+
+    &:nth-child(2n + 1) {
+      &::before {
+        width: 100%;
+        background-color: transparent;
+      }
+    }
+
+    &:nth-child(3n + 1) {
+      &::before {
+        width: 300%;
+        background-color: $text-color-base;
+      }
+    }
+  }
+}
+
+.news-item-content {
+  @include clearfix;
+  padding-bottom: 20 + $news-item-controls-height;
+}
+
+.news-item-img-wrapper {
+  float: left;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.news-item-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.news-item-text-wrapper {
+  padding-left: 140px;
+}
+
+.news-item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: em(18);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.news-item-title-link {
+  color: inherit;
+  text-decoration: none;
+  transition: all .25s;
+
+  &:hover {
+    color: #003162;
+  }
+}
+
+.news-item-description {
+  font-size: em(14);
+
+  p {
+    margin: 0;
+  }
+}
+
+.news-item-controls {
+  margin-top: -$news-item-controls-height;
+}

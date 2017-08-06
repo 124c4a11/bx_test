@@ -1,0 +1,79 @@
+@mixin clearfix() {
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin inline-block($valign: top) {
+  display: inline-block;
+  vertical-align: $valign;
+}
+
+@mixin list-unstyled() {
+  padding: 0;
+  margin: 0; 
+  list-style: none;
+}
+
+@mixin placeholder($color: #000, $font-size: 16px, $opacity: 1) {
+  &::-webkit-input-placeholder {
+    opacity: $opacity;
+    font-size: $font-size;
+    color: $color;
+  }
+  &::-moz-placeholder {
+    opacity: $opacity;
+    font-size: $font-size;
+    color: $color;
+  }
+  &:-moz-placeholder {
+    opacity: $opacity;
+    font-size: $font-size;
+    color: $color;
+  }
+  &-ms-input-placeholder {
+    opacity: $opacity;
+    font-size: $font-size;
+    color: $color;
+  }
+}
+
+@mixin absolute-center() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+@mixin transform-center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin text-justify() {
+  text-align: justify;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 100%;
+    visibility: hidden;
+  }
+}
+
+@mixin absolute-hidden() {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}

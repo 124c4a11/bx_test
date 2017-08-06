@@ -1,0 +1,47 @@
+footer.page-footer
+  .container
+    .container-inner
+      .col-left
+        h3.page-footer-title Контакты:
+        ul.info-list
+          -
+            var info = [
+              {
+                title: 'Телефон:',
+                descr: '+7 (812) 123-45-67',
+                href: 'tel:+78121234567'
+              },{
+                title: 'E-mail:',
+                descr: 'mail@site.ru',
+                href: 'mailto:mail@site.ru'
+              },{
+                title: 'Skype:',
+                descr: 'skype_for_example',
+                href: 'skype:skype_for_example'
+              },{
+                title: 'Адрес:',
+                descr: '123456, г. Москва, ул. Строителей, д. 3, кв. 12'
+              }
+            ];
+
+          each item in info
+            if item.title === 'Адрес:'
+              li.info-list-item
+                span.info-list-item-title= item.title
+                address.info-list-item-description= item.descr
+            else
+              li.info-list-item
+                span.info-list-item-title= item.title
+                span.info-list-item-description
+                  a.info-list-item-link(href= item.href)= item.descr
+
+      .col-right.page-footer-col-right
+        h3.page-footer-title Напишите нам:
+        .feedback
+          form.feedback-form
+            .feedback-group
+              input.field(type="email" name="e-mail" placeholder="E-mail")
+            .feedback-group
+              textarea.feedback-textarea.field(name="message" placeholder="Введите свое сообщение")
+            .feedback-controls
+              button.btn.btn-lg(type="submit") Отправить
