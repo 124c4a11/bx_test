@@ -76,6 +76,8 @@ $gutter: 20px;
   width: 120px;
   height: 120px;
   overflow: hidden;
+  background: url(../images/pic-bg.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .news-item-img {
