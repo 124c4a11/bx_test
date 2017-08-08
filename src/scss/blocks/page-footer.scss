@@ -5,6 +5,7 @@
 .page-footer {
   position: relative;
   height: $page-footer-height;
+  min-width: 600px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: -$page-footer-height;
@@ -17,7 +18,7 @@
   font-weight: bold;
   font-size: em(24);
   color: #ffb400;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
 .page-footer-col-right {

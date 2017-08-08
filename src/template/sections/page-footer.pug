@@ -38,10 +38,10 @@ footer.page-footer
       .col-right.page-footer-col-right
         h3.page-footer-title Напишите нам:
         .feedback
-          form.feedback-form
+          form.feedback-form(name="feedback" method="post" action="#")
             .feedback-group
-              input.field(type="email" name="e-mail" placeholder="E-mail")
+              input.field(type="email" name="e-mail" placeholder="E-mail" required)
             .feedback-group
-              textarea.feedback-textarea.field(name="message" placeholder="Введите свое сообщение")
+              textarea.feedback-textarea.field(name="message" placeholder="Введите свое сообщение" required)
             .feedback-controls
               button.btn.btn-lg(type="submit") Отправить

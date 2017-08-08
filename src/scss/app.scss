@@ -1,22 +1,21 @@
-/*==========================================================================
-  Common
-==========================================================================*/
+// ---------------------------------------
+// Common
+// ---------------------------------------
 
 @import 'common/variables.scss';
 @import 'common/mixins.scss';
 // @import 'common/susy-grid.scss';
 @import 'common/functions.scss';
-@import 'common/fonts.scss';
-@import 'common/fonts-mixins.scss';
+// @import 'common/fonts.scss';
+// @import 'common/fonts-mixins.scss';
 @import 'common/typography.scss';
 @import 'common/box-sizing-reset.scss';
 @import 'common/browserupgrade.scss';
 // @import 'common/sprite.scss';
 @import 'common/print-styles.scss';
 
-
-/*==========================================================================
-  Blocks
-==========================================================================*/
+//-----------------------------------------
+// Blocks
+//-----------------------------------------
 
 @import 'blocks/**/*.scss';
