@@ -36,12 +36,13 @@ $gutter: 20px;
     padding-right: $gutter;
 
     &::before {
+      left: $gutter;
       background-color: transparent;
     }
 
     &:nth-child(2n + 1) {
       &::before {
-        width: 200%;
+        width: calc(200% - #{$gutter * 2});
         background-color: $text-color-base;
       }
     }
@@ -59,7 +60,7 @@ $gutter: 20px;
 
     &:nth-child(3n + 1) {
       &::before {
-        width: 300%;
+        width: calc(300% - #{$gutter * 2});
         background-color: $text-color-base;
       }
     }
